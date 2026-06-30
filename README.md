@@ -2,7 +2,7 @@
 Deep Packet Inspection (DPI) is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks inside the packet payload.
 
 
-This repository, `perryvegehan/Packet_analyzer`, is a high-performance C++ implementation of a **Deep Packet Inspection (DPI) Engine**. Its primary function is to ingest network traffic (in the form of `.pcap` files), analyze the protocol headers and payloads, identify the specific applications generating that traffic (e.g., YouTube, Netflix, Facebook), and optionally filter or block traffic based on a set of defined rules.
+This repository, `swaliha-Mujawar-CM-AC/Packet_analyzer`, is a high-performance C++ implementation of a **Deep Packet Inspection (DPI) Engine**. Its primary function is to ingest network traffic (in the form of `.pcap` files), analyze the protocol headers and payloads, identify the specific applications generating that traffic (e.g., YouTube, Netflix, Facebook), and optionally filter or block traffic based on a set of defined rules.
 
 The project is designed to be both educational and performant. It includes a simple, single-threaded version for developers to learn the fundamentals of packet parsing and SNI (Server Name Indication) extraction, as well as a sophisticated multi-threaded architecture that utilizes load balancing and consistent hashing to scale inspection across multiple CPU cores. Unlike a standard firewall that only looks at IP addresses and ports (Layer 3/4), this engine performs "Deep" inspection by looking into the Application Layer (Layer 7) to identify domains even when the traffic is encrypted via TLS.
 
